@@ -1,6 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
 .app-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200%;
+    width: 100%;
+    background-color: #ccc;
+    color: #ff99bb;
+}
+
+button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+  
+    @media screen and (-ms-high-contrast: active) {
+      border: 2px solid currentcolor;
+    }
+}
+
+.nav-button {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: .8em;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  pointer-events: auto;
+  position: relative;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .nav-button {
+    padding: 10px 25px;
+  }
+}
+
+.nav-button:before,
+.nav-button:after {
+  border-radius: 80px;
+}
+
+.nav-button:before {
+  background-color: #884488;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.nav-button:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #ff3399 0, #aa44aa 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.nav-button:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+
+.nav-button:active:not(:disabled) {
+  color: #ccc;
+}
+
+.nav-button:active:not(:disabled):after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.nav-button:disabled {
+  cursor: default;
+  opacity: .24;
 }
