@@ -19,6 +19,43 @@ header {
     color: #ff99bb;
 }
 
+.sprite-section {
+  margin: 0;
+  padding: 20px;
+  display: grid;
+  width: 60%;
+  grid-template-columns: repeat(2, 315px);
+  grid-template-rows: auto;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.sprite-section > div {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.sprite-section > div > img {
+    margin: 0;
+    padding: 0;
+    max-width: 80%;
+}
+
+.sprite-section> div > h2 {
+  margin-top: 0;
+  padding: 0;
+}
+
 button-container {
     display: flex;
     flex-direction: row;

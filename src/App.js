@@ -1,4 +1,5 @@
 import React from "react";
+import SpritePage from "./components/SpritePage";
 
 export default function App() {
 
@@ -31,9 +32,7 @@ export default function App() {
       }
 
       {page == 2 && 
-        <div className="sprites">
-          sprites page
-        </div>
+        <SpritePage/>
       }
     </div>
   );
