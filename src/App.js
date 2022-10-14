@@ -1,5 +1,6 @@
 import React from "react";
 import SpritePage from "./components/SpritePage";
+import Scenes from "./components/Scenes";
 
 export default function App() {
 
@@ -16,8 +17,8 @@ export default function App() {
       </header>
       <nav className="button-container">
         <button className="nav-button" onClick={handlePageChange} value="0">most recent post</button>
-        <button className="nav-button" onClick={handlePageChange} value="1">landscapes</button>
-        <button className="nav-button" onClick={handlePageChange} value="2">sprites</button>
+        <button className="nav-button" onClick={handlePageChange} value="1">Scenes</button>
+        <button className="nav-button" onClick={handlePageChange} value="2">Sprites</button>
       </nav>
       {page == 0 && 
         <div className="recent-post">
@@ -25,15 +26,9 @@ export default function App() {
         </div>
       }
 
-      {page == 1 && 
-        <div className="landscapes">
-          landscapes page
-        </div>
-      }
+      {page == 1 && <Scenes/>}
 
-      {page == 2 && 
-        <SpritePage/>
-      }
+      {page == 2 && <SpritePage/>}
     </div>
   );
 }

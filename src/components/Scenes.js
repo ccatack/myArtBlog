@@ -1,9 +1,9 @@
 import React from "react";
-import sprites from "../data/sprites.js"
+import largeScenes from "../data/largeScenes";
 
-export default function SpritePage() {
+export default function Scenes() {
 
-    const images = sprites.map(item => {
+    const scenes = largeScenes.map(item => {
         return (
             <div key={item.id}>
                 <img src={item.image}></img>
@@ -13,8 +13,8 @@ export default function SpritePage() {
     })
 
     return (
-        <section className="sprite-section">
-            {images}
+        <section className="scenes-section">
+            {scenes}
         </section>
     )
 }
