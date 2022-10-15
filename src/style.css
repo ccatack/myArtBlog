@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+  background-color: #ddd;
+}
+
 .app-container {
     display: flex;
     flex-direction: column;
@@ -15,7 +19,6 @@ header {
     justify-content: center;
     height: 200%;
     width: 100%;
-    background-color: #ccc;
     color: #ff99bb;
 }
 
@@ -81,6 +84,7 @@ header {
     margin: 0;
     padding: 0;
     max-width: 80%;
+    border: 3px solid white;
 }
 
 .sprite-section> div > h2 {
@@ -93,6 +97,7 @@ button-container {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: #ccc;
     
 }
 
