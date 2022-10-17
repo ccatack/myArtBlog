@@ -14,10 +14,11 @@ export default function App() {
   return (
     <div className="app-container">
       <header>
-        <h1>Corb's Art Blog</h1>
+        <img src="../images/artBlogBanner.png"></img>
+        <button>Corb's Art Blog</button>
       </header>
       <nav className="button-container">
-        <button className="nav-button" onClick={handlePageChange} value="0">most recent post</button>
+        <button className="nav-button" onClick={handlePageChange} value="0">Recent Post</button>
         <button className="nav-button" onClick={handlePageChange} value="1">Scenes</button>
         <button className="nav-button" onClick={handlePageChange} value="2">Sprites</button>
       </nav>
