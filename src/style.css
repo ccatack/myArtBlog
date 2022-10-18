@@ -80,18 +80,19 @@ header > button {
 .scenes-section {
   margin: 0;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: auto;
+  row-gap: 80px;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #676767;
+  background-image: radial-gradient(at bottom center, #676767, #444);
 }
 
 .scenes-section > div {
   margin: 0 auto;
-  padding-bottom: 20px;
-  max-width: 80%;
+  max-width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,13 +116,14 @@ header > button {
   margin: 0;
   padding: 20px;
   display: grid;
-  width: 60%;
-  grid-template-columns: repeat(2, 315px);
+  width: 100%;
+  grid-template-columns: repeat(3, 300px);
   grid-template-rows: auto;
   row-gap: 20px;
+  column-gap: 20px;
   justify-content: center;
   align-items: center;
-  background-color: #676767;
+  background-image: radial-gradient(at bottom center, #676767, #444);
 }
 
 .sprite-section > div {
