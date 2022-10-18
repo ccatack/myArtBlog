@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -12,6 +13,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -34,6 +37,45 @@ header > button {
   color: #ff99bb;
   font-weight: 700;
 }
+
+/* RECENT SECTION */
+
+.recent-section {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.recent-section > div {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: .8em;
+  font-weight: 400;
+}
+
+.recent-section > div > div > img {
+  max-width: 100%;
+  border: 3px solid black;
+  margin: 0;
+}
+
+.recent-section > div > h1 {
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* SCENES SECTION */
 
 .scenes-section {
   margin: 0;
@@ -67,6 +109,8 @@ header > button {
   margin: 0;
 }
 
+/* SPRITES SECTION */
+
 .sprite-section {
   margin: 0;
   padding: 20px;
@@ -96,7 +140,7 @@ header > button {
 .sprite-section > div > img {
     margin: 0;
     padding: 0;
-    max-width: 80%;
+    max-width: 100%;
     border: 3px solid white;
 }
 
@@ -105,8 +149,44 @@ header > button {
   padding: 0;
 }
 
+/* IMAGE OVERLAYS */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-container {
+  position: relative;
+}
+.overlay-container:hover .overlay{
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 200%;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .button-container {
     width: 100%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -115,6 +195,8 @@ header > button {
     background-color: #444;
     
 }
+
+/* BUTTONS */
 
 button {
     display: inline-flex;
@@ -129,8 +211,8 @@ button {
 
 .nav-button {
   background-color: #444;
-  outline: 2px solid #bbb;
-  border-radius: 80px;
+  outline: 2px solid white;
+  border-radius: 40px;
   margin-left: 28px;
   margin-right: 28px;
   color: #ff99bb;
@@ -145,7 +227,9 @@ button {
 }
 
 .nav-button:hover {
-  background-color: #bbb;
+  background-color: white;
+  border: 4px solid white;
+  color: #ff44bb;
 }
 
 /* .nav-button {

@@ -1,0 +1,9 @@
+TO DO:
+-add actual art to data files
+-add about page
+-add footer
+
+
+DONE:
+-refactor so that recent post is just a part of a home page. dont need recent post button
+-make title button a functional "home" button

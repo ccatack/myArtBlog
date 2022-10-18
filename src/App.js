@@ -1,7 +1,7 @@
 import React from "react";
 import SpritePage from "./components/SpritePage";
 import Scenes from "./components/Scenes";
-import RecentPage from "./components/RecentPage";
+import HomePage from "./components/HomePage";
 
 export default function App() {
 
@@ -15,14 +15,14 @@ export default function App() {
     <div className="app-container">
       <header>
         <img src="../images/artBlogBanner.png"></img>
-        <button>Corb's Art Blog</button>
+        <button onClick={handlePageChange} value="0">Corb's Art Blog</button>
       </header>
       <nav className="button-container">
-        <button className="nav-button" onClick={handlePageChange} value="0">Recent Post</button>
+        {/* <button className="nav-button" onClick={handlePageChange} value="0">Recent Post</button> */}
         <button className="nav-button" onClick={handlePageChange} value="1">Scenes</button>
         <button className="nav-button" onClick={handlePageChange} value="2">Sprites</button>
       </nav>
-      {page == 0 && <RecentPage/>}
+      {page == 0 && <HomePage/>}
 
       {page == 1 && <Scenes/>}
 

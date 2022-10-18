@@ -5,9 +5,11 @@ export default function Scenes() {
 
     const scenes = largeScenes.map(item => {
         return (
-            <div key={item.id}>
+            <div key={item.id} className="overlay-container">
                 <img src={item.image}></img>
-                <h2>{item.name}</h2>
+                <div className="overlay">
+                    <div className="text">{'"' + item.name + '"'}</div>
+                </div>
             </div>
         )
     })
