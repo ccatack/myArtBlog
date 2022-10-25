@@ -65,8 +65,13 @@ header > button {
 
 .recent-section > div > div > img {
   max-width: 100%;
+  max-height: 500px;
   border: 3px solid black;
   margin: 0;
+}
+
+.recent-section > div > div {
+  background-color: black;
 }
 
 .recent-section > div > h1 {
@@ -103,6 +108,7 @@ header > button {
 
 .scenes-section > div > img {
   max-width: 100%;
+  max-height: 500px;
   border: 3px solid white;
 }
 
@@ -129,7 +135,6 @@ header > button {
 .sprite-section > div {
     margin: 0 auto;
     padding: 0;
-    min-width: 300px;
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -143,6 +148,7 @@ header > button {
     margin: 0;
     padding: 0;
     max-width: 100%;
+    max-height: 300px;
     border: 3px solid white;
 }
 

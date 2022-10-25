@@ -7,16 +7,18 @@ export default function HomePage() {
 
     var mostRecent
 
-    const d1 = new Date(largeScenes[0].dateAdded)
-    const d2 = new Date(sprites[0].dateAdded)
+    const p1 = Date.parse(largeScenes[0].dateAdded)
+    const p2 = Date.parse(sprites[0].dateAdded)
+
+    const d1 = new Date(p1)
+    const d2 = new Date(p2)
 
     d1 < d2 ? mostRecent=sprites : mostRecent=largeScenes;
 
     return (
-        <div>
             <section className="recent-section">
                 <div>
-                    <h1>Recent Post</h1>
+                    <h1>Featured Recent Post</h1>
                     <div className="overlay-container">
                         <img src={mostRecent[0].image}></img>
                         <div className="overlay">
@@ -25,6 +27,5 @@ export default function HomePage() {
                     </div>
                 </div>
         </section>
-        </div>
     )
 }

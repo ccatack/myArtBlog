@@ -1,20 +1,32 @@
 export default [
     {
-        id: 0,
-        dateAdded: "2022 - 10 - 14",
-        name: "Thunder Mtn. Pixels",
-        image: "../images/ThunderMtnPx.jpg",
+        id: 4,
+        dateAdded: "10/25/2022",
+        name: "Adriatic Peace",
+        image: "../images/scenes/porcoRossoScene.png",
     },
     {
-        id: 1,
-        dateAdded: "2022 - 10 - 14",
-        name: "Thunder Mtn. Pixels",
-        image: "../images/ThunderMtnPx.jpg",
+        id: 3,
+        dateAdded: "10/25/2022",
+        name: "Mountain at sunset",
+        image: "../images/scenes/Mountain_sunset32x32.png",
     },
     {
         id: 2,
-        dateAdded: "2022 - 10 - 14",
+        dateAdded: "10/25/2022",
+        name: "Wizard Tower",
+        image: "../images/scenes/wizardTower.png",
+    },
+    {
+        id: 5,
+        dateAdded: "10/25/2022",
+        name: "Hazy Harbor",
+        image: "../images/scenes/HazyHarborNZ64x64.png",
+    },
+    {
+        id: 0,
+        dateAdded: "10/14/2022",
         name: "Thunder Mtn. Pixels",
-        image: "../images/ThunderMtnPx.jpg",
+        image: "../images/scenes/ThunderMtnPx.jpg",
     },
 ]
