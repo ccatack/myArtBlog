@@ -19,8 +19,14 @@ export default function App() {
       </header>
       <nav className="button-container">
         {/* <button className="nav-button" onClick={handlePageChange} value="0">Recent Post</button> */}
-        <button className="nav-button" onClick={handlePageChange} value="1">Scenes</button>
-        <button className="nav-button" onClick={handlePageChange} value="2">Sprites</button>
+        <button className="nav-button" onClick={handlePageChange} value="1">
+          Scenes
+          <img src="../images/sceneIcon.png"></img>
+        </button>
+        <button className="nav-button" onClick={handlePageChange} value="2">
+          Sprites
+          <img src="../images/spriteIcon.png"></img>
+        </button>
       </nav>
       {page == 0 && <HomePage/>}
 

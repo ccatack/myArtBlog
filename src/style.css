@@ -215,11 +215,15 @@ button {
   background-color: #444;
   outline: 2px solid white;
   border-radius: 40px;
-  margin-left: 28px;
-  margin-right: 28px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: #ff99bb;
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 600;
+}
+
+.nav-button > img {
+  margin-left: 4px;
 }
 
 @media (min-width: 768px) {
@@ -230,8 +234,6 @@ button {
 
 .nav-button:hover {
   background-color: white;
-  border: 4px solid white;
-  color: #ff44bb;
 }
 
 /* .nav-button {
