@@ -28,7 +28,7 @@ header > img {
   max-width: 100%;
 }
 
-header > button {
+.home-button {
   position: absolute;
   font-size: 4em;
   top: 16%;
@@ -36,6 +36,96 @@ header > button {
   margin: 0;
   color: #ff99bb;
   font-weight: 700;
+}
+
+.about-button {
+  position: absolute;
+  right: 20px;
+  top: 140px;
+  color: black;
+  -webkit-text-stroke: .2px #444;
+  border: 2px solid white;
+  border-radius: 80px;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  white-space: no-wrap;
+  transition: all 0.2s ease-out;
+  background-color: #ebe397;
+}
+
+.about-button:hover{
+  width: 120px;
+}
+
+.about-button-text {
+  position: absolute;
+  margin-left: 52px;
+  font-size: 1.2em;
+  font-weight: 900;
+  max-width: 0;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.about-button:hover .about-button-text {
+  max-width: 90px;
+}
+
+.about-button:hover .about-button-image {
+  margin-right: 45px;
+}
+
+.about-button-image {
+  max-height: 150px;
+  margin-top: 23px;
+  margin-right: 25px;
+}
+
+.github-button {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  border: 2px solid white;
+  border-radius: 80px;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  white-space: no-wrap;
+  transition: all 0.2s ease-out;
+  background-color: #ff99bb;
+}
+
+.github-button:hover {
+  width: 120px;
+}
+
+.github-button:hover .github-button-text {
+  max-width: 90px;
+  margin-left: 25px;
+}
+
+.github-button:hover .github-button-image {
+  margin-right: 65px;
+}
+
+.github-button-text {
+  position: absolute;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: black;
+  -webkit-text-stroke: .2px #444;
+  max-width: 0;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.github-button-image {
+  max-height: 20px;
 }
 
 /* RECENT SECTION */

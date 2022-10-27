@@ -1,5 +1,6 @@
 TO DO:
 -add about page
+-make it so that title and buttons dont get put in weird spots when resizing the window
 -add how to make pixel art section to home page
 -add footer
 -upgrade fonts
