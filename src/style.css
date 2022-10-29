@@ -128,6 +128,18 @@ header > img {
   max-height: 20px;
 }
 
+/* HOMEPAGE SECTION */
+
+.homepage-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
 /* RECENT SECTION */
 
 .recent-section {
@@ -168,6 +180,98 @@ header > img {
   font-size: 2em;
   margin: 0;
   margin-bottom: 20px;
+}
+
+/* ABOUT SECTION */
+
+.about-links {
+  margin-top: 10px;
+  margin-bottom: -40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-links > button {
+  height: 80px;
+  margin-left: 10px;
+}
+
+.about-links > button > img {
+  max-width: 30px;
+  padding-bottom: 34px;
+}
+
+.about-section {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebe397;
+}
+
+.about-pieces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.about-pieces > img {
+  max-height: 400px;
+}
+
+.hire-notice {
+  font-size: 1.5em;
+  color: #aa4466;
+  background-color: #ffcc55;
+  border: 2px solid #aa4466;
+  border-radius: 5px;
+  margin-left: -40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+}
+
+.hire-notice > p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: .7em;
+  font-weight: bold;
+  color: black;
+}
+
+.my-artwork {
+  background-color: #444;
+  border: 2px solid white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  padding: 20px 50px;
+  width: 700px;
+}
+
+.my-artwork > h2 {
+  font-size: 1.2em;
+  color: #ff99bb;
+  padding: 0px 0px 40px 0px;
+}
+
+.my-artwork > p {
+  padding: 7px 0px 20px 0px;
+  color: white;
+  font-size: .8em;
 }
 
 /* SCENES SECTION */
@@ -331,90 +435,3 @@ button {
 .nav-button:hover {
   background-color: white;
 }
-
-/* .nav-button {
-  align-items: center;
-  appearance: none;
-  background-clip: padding-box;
-  background-color: initial;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  flex-direction: row;
-  flex-shrink: 0;
-  font-size: .8em;
-  font-weight: 500;
-  line-height: 24px;
-  outline: none;
-  overflow: visible;
-  pointer-events: auto;
-  position: relative;
-  touch-action: manipulation;
-  vertical-align: middle;
-  width: auto;
-  margin: 20%, 0;
-}
-
-@media (min-width: 768px) {
-  .nav-button {
-    padding: 10px 25px;
-  }
-}
-
-.nav-button:before,
-.nav-button:after {
-  border-radius: 80px;
-}
-
-.nav-button:before {
-  background-color: #444;
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -2;
-}
-
-.nav-button:after {
-  background-color: initial;
-  background-image: linear-gradient(92.83deg, #ff99bb 0,#ff3399 100%);
-  bottom: 4px;
-  content: "";
-  display: block;
-  left: 4px;
-  overflow: hidden;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  transition: all 100ms ease-out;
-  z-index: -1;
-}
-
-.nav-button:hover:not(:disabled):after {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition-timing-function: ease-in;
-}
-
-.nav-button:active:not(:disabled) {
-  color: #ccc;
-}
-
-.nav-button:active:not(:disabled):after {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  top: 4px;
-}
-
-.nav-button:disabled {
-  cursor: default;
-  opacity: .24;
-} */

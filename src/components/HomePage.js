@@ -15,7 +15,13 @@ export default function HomePage() {
 
     d1 < d2 ? mostRecent=sprites : mostRecent=largeScenes;
 
+    const handleEmailClick = async () => {
+        await navigator.clipboard.writeText("ccatack@gmail.com");
+        alert('Email has been copied to your clipboard');
+    }
+
     return (
+        <div className="homepage-container">
             <section className="recent-section">
                 <div>
                     <h1>Featured Recent Post</h1>
@@ -26,6 +32,31 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-        </section>
+            </section>
+            <section className="about-section">
+                <div className="about-links">
+                    <button onClick={() => {window.open("https://www.linkedin.com/in/corbin-atack/", '_blank');}}>
+                        <img src="../images/linkedinIcon.png"></img>
+                    </button>
+                    <button onClick={() => {window.open("https://github.com/ccatack", '_blank');}}>
+                    <img src="../images/githubIcon.png" className="github-icon"></img>
+                    </button>
+                    <button onClick={handleEmailClick}>
+                        <img src="../images/emailIcon.png" className="email-button"></img>
+                    </button>
+                </div>
+                <div className="about-pieces">
+                    <img src="../images/sprites/frisbPlayer.png"></img>
+                    <div className="hire-notice">
+                        <h2>Hire me!</h2>
+                        <p>I am an enthused recent grad with a computer science degree and I would love to work on your projects. <br></br><br></br> DM me on LinkedIn or shoot me an email!</p>
+                    </div>
+                    <div className="my-artwork">
+                        <h2>My Artwork</h2>
+                        <p>woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. </p>
+                    </div>
+                </div>
+            </section>
+        </div>
     )
 }
