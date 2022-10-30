@@ -2,7 +2,7 @@ import React from "react";
 import largeScenes from "../data/largeScenes";
 import sprites from "../data/sprites";
 
-export default function HomePage() {
+export default function HomePage(props) {
     /* dates are YYYY - MM - DD */
 
     var mostRecent
@@ -14,6 +14,14 @@ export default function HomePage() {
     const d2 = new Date(p2)
 
     d1 < d2 ? mostRecent=sprites : mostRecent=largeScenes;
+
+    const aboutRef = React.useRef();
+
+    React.useEffect(() => {
+        if (props.doScroll) {
+            aboutRef.current.scrollIntoView({behavior: "smooth"})
+        }
+    })
 
     const handleEmailClick = async () => {
         await navigator.clipboard.writeText("ccatack@gmail.com");
@@ -33,7 +41,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-            <section className="about-section">
+            <section className="about-section" ref={aboutRef} id="about">
                 <div className="about-links">
                     <button onClick={() => {window.open("https://www.linkedin.com/in/corbin-atack/", '_blank');}}>
                         <img src="../images/linkedinIcon.png"></img>

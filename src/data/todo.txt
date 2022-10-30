@@ -1,7 +1,6 @@
 TO DO:
 -add about page
     -write stuff for my work and why i do it
-    -make it so that the github and about buttons scroll with the user
 -make it so that title doesnt get put in weird spots when resizing the window
 -add how to make pixel art section to home page
 -dynamic styling based on current page (button for current page highlighted or banner color change to match content)
@@ -15,3 +14,4 @@ DONE:
 -make title button a functional "home" button
 -initial style for scene and sprite sections
 -add actual art to data files
+-make it so that the github and about buttons scroll with the user

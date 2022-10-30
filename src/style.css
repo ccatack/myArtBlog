@@ -39,9 +39,9 @@ header > img {
 }
 
 .about-button {
-  position: absolute;
+  position: fixed;
   right: 20px;
-  top: 140px;
+  top: 60px;
   color: black;
   -webkit-text-stroke: .2px #444;
   border: 2px solid white;
@@ -85,9 +85,9 @@ header > img {
 }
 
 .github-button {
-  position: absolute;
+  position: fixed;
   right: 20px;
-  top: 100px;
+  top: 20px;
   border: 2px solid white;
   border-radius: 80px;
   overflow: hidden;
@@ -224,6 +224,7 @@ header > img {
 
 .about-pieces > img {
   max-height: 400px;
+  margin-left: -50px;
 }
 
 .hire-notice {
@@ -259,7 +260,7 @@ header > img {
   align-items: center;
   margin-left: 50px;
   padding: 20px 50px;
-  width: 700px;
+  max-width: 700px;
 }
 
 .my-artwork > h2 {

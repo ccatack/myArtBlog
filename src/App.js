@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import SpritePage from "./components/SpritePage";
 import Scenes from "./components/Scenes";
 import HomePage from "./components/HomePage";
@@ -6,9 +6,16 @@ import HomePage from "./components/HomePage";
 export default function App() {
 
   const [page, setPage] = React.useState(0)
+  const [scroll, setScroll] = React.useState(true)
 
   function handlePageChange(event) {
     setPage(event.target.value)
+    setScroll(false)
+  }
+
+  function handleAboutButton(event) {
+    setPage(0)
+    setScroll(true)
   }
 
   return (
@@ -16,7 +23,7 @@ export default function App() {
       <header>
         <img src="../images/artBlogBanner.png"></img>
         <button onClick={handlePageChange} value="0" className="home-button">Corb's Art Blog</button>
-        <button onClick={handlePageChange} value="3" className="about-button">
+        <button onClick={handleAboutButton} value="0" className="about-button">
           <h2 className="about-button-text">About</h2>
           <img src="../images/sprites/frisbPlayer.png" className="about-button-image"></img>
         </button>
@@ -26,7 +33,10 @@ export default function App() {
         </button>
       </header>
       <nav className="button-container">
-        {/* <button className="nav-button" onClick={handlePageChange} value="0">Recent Post</button> */}
+        <button className="nav-button" onClick={handlePageChange} value="0">
+          Home
+          <img src="../images/homeIcon.png"></img>
+        </button>
         <button className="nav-button" onClick={handlePageChange} value="1">
           Scenes
           <img src="../images/sceneIcon.png"></img>
@@ -36,7 +46,7 @@ export default function App() {
           <img src="../images/spriteIcon.png"></img>
         </button>
       </nav>
-      {page == 0 && <HomePage/>}
+      {page == 0 && <HomePage doScroll={scroll}/>}
 
       {page == 1 && <Scenes/>}
 
