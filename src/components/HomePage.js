@@ -60,8 +60,8 @@ export default function HomePage(props) {
                         <p>I am an enthused recent grad with a computer science degree and I would love to work on your projects. <br></br><br></br> DM me on LinkedIn or shoot me an email!</p>
                     </div>
                     <div className="my-artwork">
-                        <h2>My Artwork</h2>
-                        <p>woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. woo i love art. </p>
+                        <h2>About my artwork</h2>
+                        <p>My practice is sporadic and impulsive. I might make a three pieces in a week or I might not color a pixel for a month. The subject of my work is just as scattered, making sprites and landscapes and whatever else inspires me on a given day.<br></br><br></br>I come from an artistic background in outdoor photography. This love for layers of land and wild clouds shows up in some of my pixel pieces.<br></br><br></br>While both the medium of pixel art and much of my work is inspired by video games and their history, none of it has been made for or used in any video game. If you are interested in backgrounds or sprites for a game you're producing, feel free to reach out.</p>
                     </div>
                 </div>
             </section>
