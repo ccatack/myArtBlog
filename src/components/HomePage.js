@@ -43,13 +43,13 @@ export default function HomePage(props) {
             </section>
             <section className="about-section" ref={aboutRef} id="about">
                 <div className="about-links">
-                    <button onClick={() => {window.open("https://www.linkedin.com/in/corbin-atack/", '_blank');}}>
+                    <button onClick={() => {window.open("https://www.linkedin.com/in/corbin-atack/", '_blank');}} title="LinkedIn">
                         <img src="../images/linkedinIcon.png"></img>
                     </button>
-                    <button onClick={() => {window.open("https://github.com/ccatack", '_blank');}}>
+                    <button onClick={() => {window.open("https://github.com/ccatack", '_blank');}} title="GitHub">
                     <img src="../images/githubIcon.png" className="github-icon"></img>
                     </button>
-                    <button onClick={handleEmailClick}>
+                    <button onClick={handleEmailClick} title="Copy Email">
                         <img src="../images/emailIcon.png" className="email-button"></img>
                     </button>
                 </div>
