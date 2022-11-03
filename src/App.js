@@ -22,8 +22,8 @@ export default function App() {
     <div className="app-container">
       <header>
         <img src="../images/artBlogBanner.png"></img>
-        <button onClick={() => handlePageChange} value="0" className="home-button" title="Home">Corb's Art Blog</button>
-        <button onClick={() => handleAboutButton} value="0" className="about-button" title="About me">
+        <button onClick={(e) => handlePageChange(e)} value="0" className="home-button" title="Home">Corb's Art Blog</button>
+        <button onClick={(e) => handleAboutButton(e)} value="0" className="about-button" title="About me">
           <h2 className="about-button-text">About</h2>
           <img src="../images/sprites/frisbPlayer.png" className="about-button-image"></img>
         </button>
@@ -33,15 +33,15 @@ export default function App() {
         </button>
       </header>
       <nav className="button-container">
-        <button className="nav-button" onClick={() => handlePageChange} value="0">
+        <button className="nav-button" onClick={(e) => handlePageChange(e)} value="0">
           <img src="../images/homeIcon.png"></img>
           Home
         </button>
-        <button className="nav-button" onClick={() => handlePageChange} value="1">
+        <button className="nav-button" onClick={(e) => handlePageChange(e)} value="1">
           <img src="../images/sceneIcon.png"></img>
           Scenes
         </button>
-        <button className="nav-button" onClick={() => handlePageChange} value="2">
+        <button className="nav-button" onClick={(e) => handlePageChange(e)} value="2">
           <img src="../images/spriteIcon2.png"></img>
           Sprites
         </button>

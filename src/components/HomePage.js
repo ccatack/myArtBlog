@@ -51,7 +51,7 @@ export default function HomePage(props) {
                     <button onClick={() => {window.open("https://github.com/ccatack", '_blank');}} title="GitHub">
                     <img src="../images/githubIcon.png" className="github-icon"></img>
                     </button>
-                    <button onClick={() => handleEmailClick} title="Copy Email">
+                    <button onClick={() => handleEmailClick()} title="Copy Email">
                         <img src="../images/emailIcon.png" className="email-button"></img>
                     </button>
                 </div>
