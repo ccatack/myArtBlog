@@ -1,6 +1,7 @@
 import React from "react";
 import largeScenes from "../data/largeScenes";
 import sprites from "../data/sprites";
+import HowToComponent from "./HowToComponent";
 
 export default function HomePage(props) {
     /* dates are YYYY - MM - DD */
@@ -21,7 +22,7 @@ export default function HomePage(props) {
         if (props.doScroll) {
             aboutRef.current.scrollIntoView({behavior: "smooth"})
         }
-    })
+    }, [])
 
     const handleEmailClick = async () => {
         await navigator.clipboard.writeText("ccatack@gmail.com");
@@ -41,6 +42,7 @@ export default function HomePage(props) {
                     </div>
                 </div>
             </section>
+            <HowToComponent/>
             <section className="about-section" ref={aboutRef} id="about">
                 <div className="about-links">
                     <button onClick={() => {window.open("https://www.linkedin.com/in/corbin-atack/", '_blank');}} title="LinkedIn">
@@ -49,7 +51,7 @@ export default function HomePage(props) {
                     <button onClick={() => {window.open("https://github.com/ccatack", '_blank');}} title="GitHub">
                     <img src="../images/githubIcon.png" className="github-icon"></img>
                     </button>
-                    <button onClick={handleEmailClick} title="Copy Email">
+                    <button onClick={() => handleEmailClick} title="Copy Email">
                         <img src="../images/emailIcon.png" className="email-button"></img>
                     </button>
                 </div>

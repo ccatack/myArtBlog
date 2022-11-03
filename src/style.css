@@ -149,7 +149,7 @@ header > img {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-image: radial-gradient(at center, #676767, #444);
 }
 
 .recent-section > div {
@@ -350,6 +350,52 @@ header > img {
 .sprite-section> div > h2 {
   margin-top: 0;
   padding: 0;
+}
+
+/* HOW TO SECTION */
+
+.how-to-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-button-container > button {
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 100px 10px;
+  margin: 0 10px;
+}
+
+.image-button-container > img {
+  max-width: 650px;
+  position: relative;
+  border: 1px solid #bbb;
+}
+
+.dots-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  margin: 0 3px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
 }
 
 /* IMAGE OVERLAYS */
