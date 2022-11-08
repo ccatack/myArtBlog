@@ -169,18 +169,19 @@ header > img {
 .recent-section > div > div > img {
   max-width: 100%;
   max-height: 500px;
-  border: 3px solid black;
+  border: 3px solid #ddd;
   margin: 0;
 }
 
 .recent-section > div > div {
-  background-color: black;
+  background-color: #ddd;
 }
 
 .recent-section > div > h1 {
   font-size: 2em;
   margin: 0;
   margin-bottom: 20px;
+  color: #ddd
 }
 
 /* ABOUT SECTION */
@@ -248,7 +249,7 @@ header > img {
   text-align: center;
   font-size: .7em;
   font-weight: bold;
-  color: black;
+  color: #444;
 }
 
 .my-artwork {
@@ -372,16 +373,27 @@ header > img {
 }
 
 .image-button-container > button {
-  border: 1px solid #444;
+  border: 2px solid #ddd;
   border-radius: 5px;
-  padding: 100px 10px;
+  padding: 10px 10px;
   margin: 0 10px;
+}
+
+.image-button-container > button > p {
+  line-height: .7em;
+  transform: scale(2, 1);
+  color: #444;
+}
+
+.image-button-container > button:disabled p {
+  color: #ddd;
 }
 
 .image-button-container > img {
   max-width: 650px;
   position: relative;
-  border: 1px solid #bbb;
+  border: 2px solid #ddd;
+  border-radius: 5px;
 }
 
 .dots-container {
@@ -398,6 +410,19 @@ header > img {
   width: 10px;
   height: 10px;
   background-color: #ddd;
+}
+
+.how-to-container > h1 {
+  color: #444;
+  padding: 20px
+}
+
+.how-to-container > p {
+  color: #898989;
+  font-size: .8em;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 20px;
 }
 
 /* IMAGE OVERLAYS */
