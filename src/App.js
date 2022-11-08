@@ -6,7 +6,7 @@ import HomePage from "./components/HomePage";
 export default function App() {
 
   const [page, setPage] = React.useState(0)
-  const [scroll, setScroll] = React.useState(true)
+  const [scroll, setScroll] = React.useState(false)
 
   function handlePageChange(event) {
     setPage(event.target.value)
@@ -18,12 +18,16 @@ export default function App() {
     setScroll(true)
   }
 
+  React.useEffect(() => {
+    setScroll(false)
+  }, [scroll])
+
   return (
     <div className="app-container">
       <header>
         <img src="../images/artBlogBanner.png"></img>
         <button onClick={(e) => handlePageChange(e)} value="0" className="home-button" title="Home">Corb's Art Blog</button>
-        <button onClick={(e) => handleAboutButton(e)} value="0" className="about-button" title="About me">
+        <button onClick={(e) => handleAboutButton(e)} className="about-button" title="About me" value="0">
           <h2 className="about-button-text">About</h2>
           <img src="../images/sprites/frisbPlayer.png" className="about-button-image"></img>
         </button>

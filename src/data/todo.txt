@@ -1,5 +1,4 @@
 TO DO:
--about button not working when already on home page
 -make it so that title doesnt get put in weird spots when resizing the window
 -dynamic styling based on current page (button for current page highlighted or banner color change to match content)
 -add footer
@@ -17,3 +16,4 @@ DONE:
     -write stuff for my work and why i do it
     -hire me notice
 -add how to make pixel art section to home page
+-fix bug where about button not working when already on home page

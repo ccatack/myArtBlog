@@ -22,7 +22,7 @@ export default function HomePage(props) {
         if (props.doScroll) {
             aboutRef.current.scrollIntoView({behavior: "smooth"})
         }
-    }, [])
+    }, [props.doScroll])
 
     const handleEmailClick = async () => {
         await navigator.clipboard.writeText("ccatack@gmail.com");
