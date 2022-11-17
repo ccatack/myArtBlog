@@ -26,7 +26,7 @@ export default function App() {
     <div className="app-container">
       <header>
         <img src="../images/artBlogBanner.png"></img>
-        <button onClick={(e) => handlePageChange(e)} value="0" className="home-button" title="Home">Corb's Art Blog</button>
+        <button onClick={(e) => handlePageChange(e)} value="0" className="home-button" title="Home">Corb's TESTING Blog</button>
         <button onClick={(e) => handleAboutButton(e)} className="about-button" title="About me" value="0">
           <h2 className="about-button-text">About</h2>
           <img src="../images/sprites/frisbPlayer.png" className="about-button-image"></img>

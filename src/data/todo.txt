@@ -1,7 +1,6 @@
 TO DO:
 -dynamic styling based on current page (button for current page highlighted or banner color change to match content)
 -upgrade fonts
--put on github pages
 
 
 DONE:
@@ -16,3 +15,4 @@ DONE:
 -add how to make pixel art section to home page
 -fix bug where about button not working when already on home page
 -make it so that title doesnt get put in weird spots when resizing the window
+-put on github pages
