@@ -12,16 +12,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 1260px;
 }
 
 /* HEADER */
 
 header {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 200%;
-    width: 100%;
+    min-height: 200%;
+    min-width: 100%;
     /* box-shadow: 0px 5px 7px #333; */
     z-index: 5;
 }
@@ -33,8 +35,8 @@ header > img {
 .home-button {
   position: absolute;
   font-size: 4em;
-  top: 16%;
-  left: 26.5%;
+  top: 99px;
+  left: 339px;
   margin: 0;
   color: #ff99bb;
   font-weight: 700;

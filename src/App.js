@@ -19,6 +19,11 @@ export default function App() {
   }
 
   React.useEffect(() => {
+    var w = window.innerHeight;
+    alert(w)
+  })
+
+  React.useEffect(() => {
     setScroll(false)
   }, [scroll])
 
