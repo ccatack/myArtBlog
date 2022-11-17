@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import SpritePage from "./components/SpritePage";
 import Scenes from "./components/Scenes";
 import HomePage from "./components/HomePage";
+import banner from "../images/artBlogBanner.png"
 
 export default function App() {
 
@@ -25,7 +26,7 @@ export default function App() {
   return (
     <div className="app-container">
       <header>
-        <img src="../images/artBlogBanner.png"></img>
+        <img src={banner}></img>
         <button onClick={(e) => handlePageChange(e)} value="0" className="home-button" title="Home">Corb's TESTING Blog</button>
         <button onClick={(e) => handleAboutButton(e)} className="about-button" title="About me" value="0">
           <h2 className="about-button-text">About</h2>
