@@ -6,7 +6,7 @@ export default function Scenes() {
     const scenes = largeScenes.map(item => {
         return (
             <div key={item.id} className="overlay-container">
-                <img src={item.image}></img>
+                <img src={"http://ccatack.github.io/myArtBlog/public" + item.image}></img>
                 <div className="overlay">
                     <div className="text">{'"' + item.name + '"'}</div>
                 </div>

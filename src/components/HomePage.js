@@ -35,7 +35,7 @@ export default function HomePage(props) {
                 <div>
                     <h1>Featured Recent Post</h1>
                     <div className="overlay-container">
-                        <img src={mostRecent[0].image}></img>
+                        <img src={"http://ccatack.github.io/myArtBlog/public" + mostRecent[0].image}></img>
                         <div className="overlay">
                             <div className="text">{'"' + mostRecent[0].name + '"'}</div>
                         </div>
@@ -46,17 +46,17 @@ export default function HomePage(props) {
             <section className="about-section" ref={aboutRef} id="about">
                 <div className="about-links">
                     <button onClick={() => {window.open("https://www.linkedin.com/in/corbin-atack/", '_blank');}} title="LinkedIn">
-                        <img src="../images/linkedinIcon.png"></img>
+                        <img src="http://ccatack.github.io/myArtBlog/public/images/linkedinIcon.png"></img>
                     </button>
                     <button onClick={() => {window.open("https://github.com/ccatack", '_blank');}} title="GitHub">
-                    <img src="../images/githubIcon.png" className="github-icon"></img>
+                    <img src="http://ccatack.github.io/myArtBlog/public/images/githubIcon.png" className="github-icon"></img>
                     </button>
                     <button onClick={() => handleEmailClick()} title="Copy Email">
-                        <img src="../images/emailIcon.png" className="email-button"></img>
+                        <img src="http://ccatack.github.io/myArtBlog/public/images/emailIcon.png" className="email-button"></img>
                     </button>
                 </div>
                 <div className="about-pieces">
-                    <img src="../images/sprites/frisbPlayer.png"></img>
+                    <img src="http://ccatack.github.io/myArtBlog/public/images/sprites/frisbPlayer.png"></img>
                     <div className="hire-notice">
                         <h2>Hire me!</h2>
                         <p>I am an enthused recent grad with a computer science degree and I would love to work on your projects. <br></br><br></br> DM me on LinkedIn or shoot me an email!</p>
