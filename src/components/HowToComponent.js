@@ -74,17 +74,17 @@ export default function HowToComponent() {
             <h1>The Process</h1>
             <div className="image-button-container">
                 <button ref={backButtonRef} onClick={() => handleIMGChange(-1)}><p>/<br></br>\</p></button>
-                <img ref={ref0} id="0" src="https://ccatack.github.io/myArtBlog/public/images/howTo/p1.png"></img>
-                <img ref={ref1} id="1" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spead1.png"></img>
-                <img ref={ref2} id="2" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spread2.png"></img>
-                <img ref={ref3} id="3" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spread3.png"></img>
-                <img ref={ref4} id="4" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spread4.png"></img>
-                <img ref={ref5} id="5" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spread5.png"></img>
-                <img ref={ref6} id="6" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spread6.png"></img>
-                <img ref={ref7} id="7" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spread7.png"></img>
-                <img ref={ref8} id="8" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spread8.png"></img>
-                <img ref={ref9} id="9" src="https://ccatack.github.io/myArtBlog/public/images/howTo/spead9.png"></img>
-                <img ref={ref10} id="10" src="https://ccatack.github.io/myArtBlog/public/images/howTo/p2.png"></img>
+                <img ref={ref0} id="0" src="/myArtBlog/images/howTo/p1.png"></img>
+                <img ref={ref1} id="1" src="/myArtBlog/images/howTo/spead1.png"></img>
+                <img ref={ref2} id="2" src="/myArtBlog/images/howTo/spread2.png"></img>
+                <img ref={ref3} id="3" src="/myArtBlog/images/howTo/spread3.png"></img>
+                <img ref={ref4} id="4" src="/myArtBlog/images/howTo/spread4.png"></img>
+                <img ref={ref5} id="5" src="/myArtBlog/images/howTo/spread5.png"></img>
+                <img ref={ref6} id="6" src="/myArtBlog/images/howTo/spread6.png"></img>
+                <img ref={ref7} id="7" src="/myArtBlog/images/howTo/spread7.png"></img>
+                <img ref={ref8} id="8" src="/myArtBlog/images/howTo/spread8.png"></img>
+                <img ref={ref9} id="9" src="/myArtBlog/images/howTo/spead9.png"></img>
+                <img ref={ref10} id="10" src="/myArtBlog/images/howTo/p2.png"></img>
                 <button onClick={() => handleIMGChange(1)}><p>\<br></br>/</p></button>
             </div>
             <div className="dots-container">

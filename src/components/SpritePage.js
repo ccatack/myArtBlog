@@ -6,7 +6,7 @@ export default function SpritePage() {
     const images = sprites.map(item => {
         return (
             <div key={item.id} className="overlay-container">
-                <img src={"http://ccatack.github.io/myArtBlog/public" + item.image}></img>
+                <img src={"/myArtBlog" + item.image}></img>
                 <div className="overlay">
                     <div className="text">{'"' + item.name + '"'}</div>
                 </div>

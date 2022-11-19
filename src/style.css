@@ -66,7 +66,7 @@ header > img {
 .about-button-text {
   position: absolute;
   margin-left: 52px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'DM Serif Display', serif;
   color: #333;
   font-size: 1.2em;
   font-weight: 900;
@@ -120,7 +120,7 @@ header > img {
 
 .github-button-text {
   position: absolute;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 1.2em;
   font-weight: 700;
   color: black;
@@ -185,7 +185,7 @@ header > img {
 }
 
 .recent-section > div > h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-weight: 400;
   font-size: 2em;
   margin: 0;
@@ -254,7 +254,7 @@ header > img {
 }
 
 .hire-notice > h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'DM Serif Display', serif;
 }
 
 .hire-notice > p {
@@ -280,7 +280,7 @@ header > img {
 }
 
 .my-artwork > h2 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-weight: 400;
   font-size: 1.4em;
   color: #ff99bb;
@@ -429,7 +429,7 @@ header > img {
 }
 
 .how-to-container > h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-weight: 400;
   color: #444;
   padding: 20px
@@ -510,7 +510,7 @@ button {
   margin-left: 20px;
   margin-right: 20px;
   color: #ff99bb;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 1em;
   font-weight: 400;
   padding: 5px 14px;
