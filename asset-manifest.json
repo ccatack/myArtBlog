@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/myArtBlog/static/css/main.080a376b.css",
-    "main.js": "/myArtBlog/static/js/main.bf3b1feb.js",
+    "main.css": "/myArtBlog/static/css/main.c580ce78.css",
+    "main.js": "/myArtBlog/static/js/main.c738f81f.js",
     "index.html": "/myArtBlog/index.html",
-    "main.080a376b.css.map": "/myArtBlog/static/css/main.080a376b.css.map",
-    "main.bf3b1feb.js.map": "/myArtBlog/static/js/main.bf3b1feb.js.map"
+    "main.c580ce78.css.map": "/myArtBlog/static/css/main.c580ce78.css.map",
+    "main.c738f81f.js.map": "/myArtBlog/static/js/main.c738f81f.js.map"
   },
   "entrypoints": [
-    "static/css/main.080a376b.css",
-    "static/js/main.bf3b1feb.js"
+    "static/css/main.c580ce78.css",
+    "static/js/main.c738f81f.js"
   ]
 }
