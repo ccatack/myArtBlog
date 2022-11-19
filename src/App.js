@@ -25,28 +25,28 @@ export default function App() {
   return (
     <div className="app-container">
       <header>
-        <img src="http://ccatack.github.io/myArtBlog/public/images/artBlogBanner.png"></img>
+        <img src="/myArtBlog/src/logo192.png"></img>
         <button onClick={(e) => handlePageChange(e)} value="0" className="home-button" title="Home">Corb's Art Blog</button>
         <button onClick={(e) => handleAboutButton(e)} className="about-button" title="About me" value="0">
           <h2 className="about-button-text">About</h2>
-          <img src="http://ccatack.github.io/myArtBlog/public/images/sprites/frisbPlayer.png" className="about-button-image"></img>
+          <img src="https://ccatack.github.io/myArtBlog/public/images/sprites/frisbPlayer.png" className="about-button-image"></img>
         </button>
         <button className="github-button" onClick={() => {window.open("https://github.com/ccatack/myArtBlog", '_blank');}} title="GitHub for this blog">
           <h2 className="github-button-text">GitHub</h2>
-          <img src="http://ccatack.github.io/myArtBlog/public/images/githubIcon.png" className="github-button-image"></img>
+          <img src="https://ccatack.github.io/myArtBlog/public/images/githubIcon.png" className="github-button-image"></img>
         </button>
       </header>
       <nav className="button-container">
         <button className="nav-button" onClick={(e) => handlePageChange(e)} value="0">
-          <img src="http://ccatack.github.io/myArtBlog/public/images/homeIcon.png"></img>
+          <img src="https://ccatack.github.io/myArtBlog/public/images/homeIcon.png"></img>
           Home
         </button>
         <button className="nav-button" onClick={(e) => handlePageChange(e)} value="1">
-          <img src="http://ccatack.github.io/myArtBlog/public/images/sceneIcon.png"></img>
+          <img src="https://ccatack.github.io/myArtBlog/public/images/sceneIcon.png"></img>
           Scenes
         </button>
         <button className="nav-button" onClick={(e) => handlePageChange(e)} value="2">
-          <img src="http://ccatack.github.io/myArtBlog/public/images/spriteIcon2.png"></img>
+          <img src="https://ccatack.github.io/myArtBlog/public/images/spriteIcon2.png"></img>
           Sprites
         </button>
       </nav>
