@@ -16,6 +16,12 @@ body {
     min-width: 1260px;
 }
 
+@media (max-width: 600px) {
+  .app-container {
+    min-width: 200px;
+  }
+}
+
 /* HEADER */
 
 header {
@@ -42,6 +48,14 @@ header > img {
   margin: 0;
   color: #ff99bb;
   font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .home-button {
+    font-size: 1.8em;
+    top: 39%;
+    left: 24%;
+  }
 }
 
 .about-button {
@@ -193,6 +207,12 @@ header > img {
   color: #ddd
 }
 
+@media (max-width: 600px) {
+  .recent-section > div > h1 {
+    font-size: 1.3em;
+  }
+}
+
 /* ABOUT SECTION */
 
 .about-links {
@@ -294,6 +314,33 @@ header > img {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .about-pieces {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .about-pieces > img {
+    display: none;
+  }
+
+  .hire-notice {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 90%;
+    font-size: 1em;
+    border-radius: 0px;
+  }
+
+  .my-artwork {
+    margin: 0px;
+    margin-top: 20px;
+  }
+}
+
 /* SCENES SECTION */
 
 .scenes-section {
@@ -328,6 +375,12 @@ header > img {
 
 .scenes-section > div > h2 {
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  .scenes-section > div {
+    max-width: 80%;
+  }
 }
 
 /* SPRITES SECTION */
@@ -369,6 +422,19 @@ header > img {
 .sprite-section> div > h2 {
   margin-top: 0;
   padding: 0;
+}
+
+@media (max-width: 600px) {
+  .sprite-section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20;
+  }
+
+  .sprite-section > div {
+    margin-bottom: 20px;
+  }
 }
 
 /* HOW TO SECTION */
@@ -441,6 +507,16 @@ header > img {
   text-align: center;
   max-width: 600px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .image-button-container > img {
+    max-width: 80%;
+  }
+
+  .how-to-container > p {
+    max-width: 80%;
+  }
 }
 
 /* IMAGE OVERLAYS */

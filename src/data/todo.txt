@@ -1,6 +1,5 @@
 TO DO:
--dynamic styling based on current page (button for current page highlighted or banner color change to match content)
-
+-use media queries to make it more mobile friendly
 
 DONE:
 -refactor so that recent post is just a part of a home page. dont need recent post button
