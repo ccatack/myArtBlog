@@ -1,9 +1,21 @@
 export default [
     {
-        id: 9,
+        id: 11,
         dateAdded: "10/26/2022",
         name: "old bloke",
         image: "/images/sprites/oldMan.png",
+    },
+    {
+        id: 10,
+        dateAdded: "10/25/2022",
+        name: "SxF penguin with uniform",
+        image: "/images/sprites/SxFpengUniform.png",
+    },
+    {
+        id: 9,
+        dateAdded: "10/25/2022",
+        name: "SxF penguin",
+        image: "/images/sprites/SxFpenguin.png",
     },
     {
         id: 8,
