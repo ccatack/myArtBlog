@@ -1,5 +1,11 @@
 export default [
     {
+        id: 5,
+        dateAdded: "11/29/2022",
+        name: "cabin in the sun",
+        image: "/images/scenes/cabinInTheSun.png",
+    },
+    {
         id: 4,
         dateAdded: "10/25/2022",
         name: "Adriatic Peace",
