@@ -42,20 +42,12 @@ header > img {
 .home-button {
   position: absolute;
   font-family: 'DM Serif Display', serif;
-  font-size: 4.3em;
-  top: 78px;
-  left: 335px;
+  font-size: 6vw;
+  top: 41%;
+  left: 24%;
   margin: 0;
   color: #ff99bb;
   font-weight: 500;
-}
-
-@media (max-width: 600px) {
-  .home-button {
-    font-size: 1.8em;
-    top: 39%;
-    left: 24%;
-  }
 }
 
 .about-button {
@@ -511,11 +503,26 @@ header > img {
 
 @media (max-width: 600px) {
   .image-button-container > img {
-    max-width: 80%;
+    max-width: 80vw;
+  }
+
+  .image-button-container > button {
+    margin: 0px 5px;
+    padding: 8px 8px;
   }
 
   .how-to-container > p {
     max-width: 80%;
+  }
+
+  .how-to-container > h1 {
+    font-size: 7vw;
+  }
+
+  .dot {
+    margin: 0 2px;
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -598,4 +605,12 @@ button {
 
 .nav-button:hover {
   border-bottom: 2px solid #ff99bb;
+}
+
+@media (max-width: 600px) {
+  .nav-button {
+    font-size: 3.2vw;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
