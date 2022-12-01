@@ -9,7 +9,7 @@ export default function App() {
   const [scroll, setScroll] = React.useState(false)
 
   function handlePageChange(event) {
-    setPage(event.target.value)
+    setPage(event.target.id)
     setScroll(false)
   }
 
@@ -37,16 +37,16 @@ export default function App() {
         </button>
       </header>
       <nav className="button-container">
-        <button className="nav-button" onClick={(e) => handlePageChange(e)} value="0">
-          <img src="/myArtBlog/images/homeIcon.png"></img>
+        <button className="nav-button" onClick={(e) => handlePageChange(e)} id="0">
+          <img src="/myArtBlog/images/homeIcon.png" onClick={(e) => handlePageChange(e)} id="0"></img>
           Home
         </button>
-        <button className="nav-button" onClick={(e) => handlePageChange(e)} value="1">
-          <img src="/myArtBlog/images/sceneIcon.png"></img>
+        <button className="nav-button" onClick={(e) => handlePageChange(e)} id="1">
+          <img src="/myArtBlog/images/sceneIcon.png" onClick={(e) => handlePageChange(e)} id="1"></img>
           Scenes
         </button>
-        <button className="nav-button" onClick={(e) => handlePageChange(e)} value="2">
-          <img src="/myArtBlog/images/spriteIcon2.png"></img>
+        <button className="nav-button" onClick={(e) => handlePageChange(e)} id="2">
+          <img src="/myArtBlog/images/spriteIcon2.png" onClick={(e) => handlePageChange(e)} id="2"></img>
           Sprites
         </button>
       </nav>

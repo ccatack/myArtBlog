@@ -24,7 +24,7 @@ export default [
         image: "/images/scenes/wizardTower.png",
     },
     {
-        id: 5,
+        id: 1,
         dateAdded: "10/25/2022",
         name: "Hazy Harbor",
         image: "/images/scenes/HazyHarborNZ64x64.png",
