@@ -1,5 +1,17 @@
 export default [
     {
+        id: 13,
+        dateAdded: "01/02/2023",
+        name: "high five - weekly challenge",
+        image: "/images/sprites/high_five1_2_23.png",
+    },
+    {
+        id: 12,
+        dateAdded: "01/01/2023",
+        name: "tree - weekly challenge",
+        image: "/images/sprites/tree12_26_22.png",
+    },
+    {
         id: 11,
         dateAdded: "10/26/2022",
         name: "old bloke",
