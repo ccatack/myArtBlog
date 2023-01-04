@@ -1,5 +1,11 @@
 export default [
     {
+        id: 6,
+        dateAdded: "01/03/2023",
+        name: "at the top",
+        image: "/images/scenes/basinsOfWater.png",
+    },
+    {
         id: 5,
         dateAdded: "11/29/2022",
         name: "cabin in the sun",
