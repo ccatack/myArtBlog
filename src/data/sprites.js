@@ -1,5 +1,11 @@
 export default [
     {
+        id: 14,
+        dateAdded: "01/010/2023",
+        name: "star - weekly challenge",
+        image: "/images/sprites/star_1_10_23.png",
+    },
+    {
         id: 13,
         dateAdded: "01/02/2023",
         name: "high five - weekly challenge",
