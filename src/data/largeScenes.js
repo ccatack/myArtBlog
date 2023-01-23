@@ -1,5 +1,11 @@
 export default [
     {
+        id: 7,
+        dateAdded: "01/023/2023",
+        name: "stop for bread",
+        image: "/images/scenes/bakeryIsometric.png",
+    },
+    {
         id: 6,
         dateAdded: "01/03/2023",
         name: "at the top",
