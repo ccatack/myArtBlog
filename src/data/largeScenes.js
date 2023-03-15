@@ -1,7 +1,13 @@
 export default [
     {
+        id: 8,
+        dateAdded: "03/15/2023",
+        name: "Soft Evening Light",
+        image: "/images/scenes/treeReflection.png",
+    },
+    {
         id: 7,
-        dateAdded: "01/023/2023",
+        dateAdded: "01/23/2023",
         name: "stop for bread",
         image: "/images/scenes/bakeryIsometric.png",
     },
